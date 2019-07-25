@@ -5,11 +5,10 @@ const mongoose = require('mongoose');
 
 const Customer = new mongoose.Schema({
     idItem: {type:Number, default:0},
-    firstName: {type:String, trim=true, default:''},
-    lastName: {type:String, trim=true, default:''},
-    email: {type:String, trim=true, default:''},
-    phone: {type:String, trim=true, default:''},
-    email: {type:String, trim=true, default:''},
+    firstName: String,
+    lastName: String,
+    email: String,
+    phone: String,
     company: {type:String, trim=true, default:''}
 });
 
